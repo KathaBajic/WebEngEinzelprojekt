@@ -40,9 +40,18 @@ module.exports = {
       {
         test: /\.(js)$/,
         exclude: /node_modules/, // files to exclude
-        use: ['babel-loader', 'eslint-loader']
-      }
-    ]
+        use: ['babel-loader', 'eslint-loader'],
+      },
+      // CSS and SASS
+      {
+        test: /\.(scss|css)$/, // load files that end with scss and css
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ],
   },
   resolve: {
     // options for resolving module requests
