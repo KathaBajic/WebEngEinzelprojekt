@@ -1,0 +1,5 @@
+// inside .eslintrc
+{
+    "parser": "babel-eslint",
+    "rules": {}
+}
