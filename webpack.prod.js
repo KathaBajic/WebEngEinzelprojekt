@@ -14,7 +14,8 @@ module.exports = {
   // in the /dist folder
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    library: 'EntryPoint'
   },
   // 3
   // The /dist folder will be used to serve our application
@@ -66,5 +67,6 @@ module.exports = {
   resolve: {
     // options for resolving module requests
     extensions: ['*', '.js']  // files to load
-  }
+  },
+  devtool: "source-map"
 };

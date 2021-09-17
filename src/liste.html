@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="">
     </head>
 
-    <body id="idBody">
+    <body onload="window.requestData();">
         <header>
             <p> Herzlich Willkommen! </p>
         </header>
@@ -30,12 +30,6 @@
         <main>
             <h1 class="grid-row">Ajax and DOM with JS</h1>
 
-            <div class="grid-row">
-                <div class="grid-col">
-                    <button class="btn-primary" onclick="app.requestData();">Send Ajax Request</button>
-                </div>
-                <div class="grid-col"></div>
-            </div>
 
             <div class="grid-col-4">
                 <h1>List of Objects</h1>
@@ -61,7 +55,7 @@
             </div>
         </main>
 
-        <script src="./index.js" async defer></script>
+        <script src="bundle.js" async defer></script>
 
         <footer>
             <a href="kontakt.html">Kontakt</a>
