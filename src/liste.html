@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            <%= htmlWebpackPlugin.options.title %>
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body id="idBody">
+        <header>
+            <p> Herzlich Willkommen! </p>
+        </header>
+
+        <h1>
+            <%= htmlWebpackPlugin.options.title %>
+        </h1>
+
+        <div class="topnav" id="topnavid">
+            <a href="index.html">Home</a>
+            <a href="liste.html" class="active">Liste</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <main>
+            <h1 class="grid-row">Ajax and DOM with JS</h1>
+
+            <div class="grid-row">
+                <div class="grid-col">
+                    <button class="btn-primary" onclick="app.requestData();">Send Ajax Request</button>
+                </div>
+                <div class="grid-col"></div>
+            </div>
+
+            <div class="grid-col-4">
+                <h1>List of Objects</h1>
+            </div>
+            <div class="grid-col-4"></div>
+
+            <div class="grid-col-4">
+                <h1>Wishlist</h1>
+            </div>
+
+            <div class="grid-col-4">
+                <ul class="listgroup" id="item-list">
+                    <!-- List gets appended with JS -->
+                </ul>
+            </div>
+
+            <div class="grid-col-4"></div>
+
+            <div class="grid-col-4">
+                <ul class="listgroup" id="wishlist">
+                    <!-- List gets appended with JS -->
+                </ul>
+            </div>
+        </main>
+
+        <script src="./index.js" async defer></script>
+
+        <footer>
+            <a href="kontakt.html">Kontakt</a>
+            <p>© 2021 by Katharina Bajic</p>
+        </footer>
+    </body>
+
+</html>

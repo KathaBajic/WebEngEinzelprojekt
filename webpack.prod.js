@@ -27,9 +27,19 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin,
     new HtmlWebpackPlugin({
-      title: "Basic Webpack Setup",
+      title: "Web Eng Einzelprojekt Katharina Bajic",
       template: path.resolve(__dirname, './src/index.html'),
-    })
+    }),
+    new HtmlWebpackPlugin({
+      title: "Kontakt",
+      filename: "kontakt.html",
+      template: path.resolve(__dirname, './src/kontakt.html'),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Liste",
+      filename: "liste.html",
+      template: path.resolve(__dirname, './src/liste.html'),
+    }),
   ],
   // 5 
   // Integrate Babel in the build process
