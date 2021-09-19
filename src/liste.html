@@ -27,35 +27,30 @@
             <a href="kontakt.html">Kontakt</a>
         </div>
 
-        <main>
-
-            <div class="grid-col-4">
+        <div class="container">
+            <div class="floatLeft">
                 <h1>Harry Potter Characters</h1>
+
+                <table id="carac-table" class="table" style="float: left;">
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td><b>Species</b></td>
+                        <td><b>House</b></td>
+                        <td><b>Birthday</b></td>
+                        <td><b>Patronus</b></td>
+                    </tr>
+                </table>
             </div>
 
-            <table id="carac-table">
-                <tr>
-                    <td><b>Name</b></td>
-                    <td><b>Species</b></td>
-                    <td><b>House</b></td>
-                    <td><b>Birthday</b></td>
-                    <td><b>Patronus</b></td>
-                </tr>
-            </table>
 
-            <div class="grid-col-4">
-                <h1>Reminder List</h1>
+            <div class="floatRight">
+                <h1>Favorite Characters</h1>
+
+                <table id="rem-table" class="table">
+                    <!-- Table gets appended with JS -->
+                </table>
             </div>
-
-            <table id="rem-table">
-                <!-- Table gets appended with JS -->
-            </table>
-        </main>
-
-        <footer>
-            <a href="kontakt.html">Kontakt</a>
-            <p>© 2021 by Katharina Bajic</p>
-        </footer>
+        </div>
     </body>
 
 </html>
