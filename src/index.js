@@ -3,7 +3,7 @@ import './styles/style.scss';
 let requestData = function() {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = responseHandler;
-    xhttp.open("GET", "http://hp-api.herokuapp.com/api/characters", true);
+    xhttp.open("GET", "https://hp-api.herokuapp.com/api/characters", true);
     xhttp.send();
 }
 
