@@ -7,7 +7,7 @@
         <title>
             <%= htmlWebpackPlugin.options.title %>
         </title>
-        <meta name="description" content="">
+        <meta name="List page for web eng projec" content="demonstation of API usage and DOM manipulation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
@@ -27,28 +27,26 @@
             <%= htmlWebpackPlugin.options.title %>
         </h1>
 
-        <div class="container">
-            <div class="floatLeft">
-                <h1>Harry Potter Characters</h1>
+        <div>
+            <h1>Favorite Characters</h1>
 
-                <table id="carac-table" class="table" style="float: left;">
-                    <tr>
-                        <td><b>Name</b></td>
-                        <td><b>Species</b></td>
-                        <td><b>House</b></td>
-                        <td><b>Birthday</b></td>
-                        <td><b>Patronus</b></td>
-                    </tr>
-                </table>
-            </div>
+            <table id="rem-table" class="table">
+                <!-- Table gets appended with JS -->
+            </table>
+        </div>
 
-            <div class="floatRight">
-                <h1>Favorite Characters</h1>
+        <div>
+            <h1>Harry Potter Characters</h1>
 
-                <table id="rem-table" class="table">
-                    <!-- Table gets appended with JS -->
-                </table>
-            </div>
+            <table id="carac-table" class="table" style="float: left;">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Species</b></td>
+                    <td><b>House</b></td>
+                    <td><b>Birthday</b></td>
+                    <td><b>Patronus</b></td>
+                </tr>
+            </table>
         </div>
     </body>
 
