@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="">
 </head>
 
-<body id="idBody">
+<body id="idBody" onload="window.initHome();">
   <header>
     <p>  Web Engineering Einzelprojekt Katharina Bajic </p>
   </header>
@@ -45,7 +45,7 @@
       <label for="pass">Password (8 characters minimum):</label><br><br>
       <input type="password" id="pass" name="password" minlength="8" required><br><br>
 
-      <input type="submit" value="Prüfen">
+      <input type="submit" value="Prüfen" id="submitbtn">
     </form>
   </div>
 </body>
