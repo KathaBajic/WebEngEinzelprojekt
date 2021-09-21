@@ -14,11 +14,8 @@
 
 <body id="idBody">
   <header>
-    <p> Herzlich Willkommen! </p>
+    <p>  Web Engineering Einzelprojekt Katharina Bajic </p>
   </header>
-  <h1>
-    <%= htmlWebpackPlugin.options.title %>
-  </h1>
 
   <div class="topnav" id="topnavid">
     <a href="index.html" class="active">Home</a>
@@ -26,10 +23,30 @@
     <a href="kontakt.html">Kontakt</a>
   </div>
 
-  <footer>
-    <a href="kontakt.html">Kontakt</a>
-    <p>© 2021 by Katharina Bajic</p>
-  </footer>
+  <h1>
+    <%= htmlWebpackPlugin.options.title %>
+  </h1>
+
+  <div>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="Vorname" required><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Nachname" required><br><br>
+
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" max="110" min="0" required><br><br>
+
+      <label for="email">E-Mail:</label><br>
+      <input type="email" id="email" name="email" placeholder="test@mail.com" required><br><br>
+
+      <label for="pass">Password (8 characters minimum):</label><br><br>
+      <input type="password" id="pass" name="password" minlength="8" required><br><br>
+
+      <input type="submit" value="Prüfen">
+    </form>
+  </div>
 </body>
 
 </html>
